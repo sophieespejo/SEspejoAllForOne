@@ -1,0 +1,356 @@
+body,html 
+{
+    height: 100%;
+    background-color:#3D5361;
+    background-size: cover;
+    font-family: 'Staatliches', cursive;
+    color: #F5F0ED;
+}
+
+.studentInfoTxt{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #3D5361;
+}
+
+.mainLink
+{
+    text-decoration: none;
+    color: #F5F0ED;
+}
+
+/* .swiper
+{
+    height: 100px;
+    width: 650px;
+} */
+.game-container,.game-containerIndex, .game-container8 {
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+    background: #F5F0ED;
+    padding: 0px;
+    width: 700px;
+    /* width: 50%; */
+    height: 450px;
+    border-radius: 1em;
+    justify-content: center;
+}
+
+.game-container5
+{
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+    background: #F5F0ED;
+    padding: 0px;
+    width: 700px;
+    height: 700px;
+    border-radius: 1em;
+    justify-content: center;
+}
+
+.instructionTxt
+{
+    margin-top: 23%;
+    font-size: 2.5rem;
+    font-family: 'Staatliches', cursive; 
+    /* height: 85px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F0ED;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+    color: #3D5361;
+}
+
+.header
+{
+    font-size: 2.2rem;
+    font-family: 'Staatliches', cursive;   
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F0ED;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: #3D5361;
+}
+
+.nav-link
+{
+    /* position: sticky; */
+    /* color: #F5F0ED !important; */
+    /* margin-left: 50px; */
+    font-size: 2.5rem;
+}
+
+.btn1
+{
+    margin-left:10px;
+    color: #D6B7B5 !important;
+}
+
+.btn2
+{
+    margin-left:40px;
+    color: #D6C6B5 !important;
+}
+
+.btn3
+{
+    margin-left:40px;
+    color: #D6D2B5 !important;
+}
+
+.btn4
+{
+    margin-left:40px;
+    color: #D1D6B5 !important;
+}
+
+.btn5
+{
+    margin-left:40px;
+    color: #B5D6C6 !important;
+}
+
+.btn6
+{
+    margin-left:40px;
+    color: #B5C4D6 !important;
+}
+
+.btn7
+{
+    margin-left:40px;
+    color: #B8B5D6 !important;
+}
+
+.btn8
+{
+    margin-left:40px;
+    color: #D6B5D1 !important;
+}
+
+.btn9
+{
+    margin-left:40px;
+    color: #E3AFD9 !important;
+}
+
+.menubar
+{
+    display: flex; 
+    justify-content: center;
+}
+
+.navbar-nav
+{
+    flex-direction: row;
+}
+
+ .active {
+  /* background: white; */
+  /* border: 1px solid white;  */
+  border: 2px solid #E5FEFF;
+  /* padding: 0px 3px; */
+  padding: 5px 5px !important;
+} 
+
+
+
+/*colors css families */
+ .bg1
+{
+    background-color: #D6B7B5;
+} 
+
+.bg2
+{
+    background-color: #D6C6B5;
+}
+
+.bg3
+{
+    background-color: #D6D2B5;
+}
+
+.bg4
+{
+    background-color: #D1D6B5;
+}
+
+.bg5
+{
+    background-color: #B5D6C6;
+}
+
+.bg6
+{
+    background-color: #B5C4D6;
+}
+
+.bg7
+{
+    background-color: #B8B5D6;
+}
+
+.bg8
+{
+    background-color: #D6B5D1;
+}
+
+.bg9
+{
+    background-color: #E3AFD9;
+} 
+
+.instChText
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    color: #3D5361;
+}
+
+.btn
+{
+    width: 115px;
+    background-color: #D4C6BD;
+    font-size:1.2rem;
+    border: 0.5px solid #3d536182;
+}
+
+.fetchedStuff
+{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    color: #3D5361;
+    font-weight: bold;
+}
+
+.labelTxt
+{
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:0px;
+    color: #3D5361;
+}
+
+.mlTxt
+{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:0px;
+    color: #3D5361;
+}
+
+@media screen and (max-width: 768px) {
+    .game-container8
+    {
+        width: 700px;
+        /* width: 50%; */
+        height: 450px;
+    }
+    .nav-link
+    {
+        /* position: sticky; */
+        /* color: #F5F0ED !important; */
+        /* margin-left: 50px; */
+
+        font-size: 2rem;
+    }
+    .game-containerIndex
+    {
+        width: 610px;
+        height: 400px;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9
+    {
+        margin:30px;
+    }
+
+
+    .instChText
+    {
+        font-size: 1.5rem;
+    }
+
+    .fetchedStuff
+    {
+        font-size: 1.7rem;
+    }
+    .instructionTxt
+    {
+        font-size: 1.8rem;
+    }
+
+    .labelTxt
+    {
+        font-size: 1.1rem;
+
+    }
+    .mlTxt{
+        font-size: 0.9rem;
+    }
+    .game-container5 {
+        width: 90%;
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .game-container {
+        width: 90%;
+        height: 400px;
+    }
+
+        .game-containerIndex
+    {
+        width: 80%;
+        height: 400px;
+    }
+
+        .header
+    {
+        font-size: 1.5rem; 
+        height: 85px;
+    }
+    .fetchedStuff
+    {
+        font-size: 1.3rem;
+    }
+    .instructionTxt
+    {
+        margin-top: 40%;
+        font-size: 1.5rem;
+    }
+    .clockTxt{
+        font-size: 1em;
+    }  
+    .instChText
+    {
+        font-size: 1.2rem;
+    }
+    .mlTxt
+    {
+        font-size: 0.8rem;
+    }
+    .game-container5
+    {
+        width: 90%;
+        min-height: 750px;
+    }
+    .game-container8
+    {
+        width: 90%;
+        height: 650px;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9
+    {
+        margin:15px;
+    }
+}
+
