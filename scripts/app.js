@@ -117,7 +117,7 @@ if(goBtn5 != null)
     createInstructions(instructionsArr[4]);
     goBtn5.addEventListener('click', function()
     {
-        miniCh5(allInputs.length, allInputs[0].value, allInputs[1].value, allInputs[2].value, allInputs[3].value, allInputs[4].value, allInputs[5].value, allInputs[6].value, allInputs[7].value, allInputs[8].value, allInputs[9].value, output5);
+        miniCh5(allInputs, allInputs[0].value, allInputs[1].value, allInputs[2].value, allInputs[3].value, allInputs[4].value, allInputs[5].value, allInputs[6].value, allInputs[7].value, allInputs[8].value, allInputs[9].value, output5);
     })
 }
 

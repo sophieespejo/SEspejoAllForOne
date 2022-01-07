@@ -4,6 +4,7 @@ export default function miniCh7(stringOrInteger, userInput, output7)
     {
         if(parseInt(userInput))
         {
+            output7.className = "errorMsg shake";
             output7.textContent = "Please make sure your phrase contains letters only";
         }
         else
@@ -11,14 +12,17 @@ export default function miniCh7(stringOrInteger, userInput, output7)
             fetch("https://sespejoallforone.azurewebsites.net/Challenges/miniCh7/"+ stringOrInteger + "/" + userInput).then(
             response => response.text()
         ).then(
-            data => output7.textContent = data
-        )
+            data => {
+                output7.className = "fetchedStuff zoomer";
+                output7.textContent = data
+            })
         }
     }
     else if(stringOrInteger == "int")
     {
         if(!(parseInt(userInput)))
         {
+            output7.className = "errorMsg shake";
             output7.textContent = "Please make sure your phrase contains numbers only";
         }
         else
@@ -26,12 +30,15 @@ export default function miniCh7(stringOrInteger, userInput, output7)
             fetch("https://sespejoallforone.azurewebsites.net/Challenges/miniCh7/"+ stringOrInteger + "/" + userInput).then(
             response => response.text()
         ).then(
-            data => output7.textContent = data
-        )
+            data => {
+                output7.className = "fetchedStuff zoomer";
+                output7.textContent = data;
+            })
         }
     }
     else if(stringOrInteger == "nothing")
     {
+        output7.className = "errorMsg shake";
         output7.textContent = "Please select a valid option from the dropdown menu"
     }
 }

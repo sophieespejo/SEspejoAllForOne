@@ -32,11 +32,15 @@ a.mainLink:hover
 .swiper-pagination-fraction{
     bottom: -0px !important;
 }
- /* .swiper
+
+.errorMsg
 {
-    height: 115px;
-    width: 600px;
-}  */
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    color: #bc4633;
+    font-weight: bold;
+
+}
 .game-container,.game-containerIndex, .game-container8 {
     margin: auto;
     border: 1px solid black;
@@ -291,7 +295,7 @@ a.mainLink:hover
         font-size: 1.5rem;
     }
 
-    .fetchedStuff
+    .fetchedStuff, .errorMsg
     {
         font-size: 1.7rem;
     }
@@ -331,7 +335,7 @@ a.mainLink:hover
         font-size: 1.5rem; 
         height: 85px;
     }
-    .fetchedStuff
+    .fetchedStuff, .errorMsg
     {
         font-size: 1.3rem;
     }
