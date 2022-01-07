@@ -46,20 +46,20 @@ let ch1TxtBox = document.getElementById('ch1TxtBox'),
     output9 = document.getElementById('output9'),
     goBtn9 = document.getElementById('goBtn9'),
     cuisineOptions = document.getElementById('cuisineOptions'),
-    selectedCuisine;
-    // injectInstructionsHere = document.getElementById('injectInstructionsHere');
+    selectedCuisine,
+    injectInstructionsHere = document.getElementById('injectInstructionsHere');
 
-    // let instructionsArr = [
-    //     "Instructions: Write your name in the field below and press go to receive a greeting!",
-    //     "Instructions: Write two numbers in the boxes below then press go to get the sum.",
-    //     "Instructions: Fill in the input fields and press go to receive a wakeup message.",
-    //     "Instructions: Select two numbers to get two comparison statements.",
-    //     "Instructions: Fill in all 10 text boxes to create a Madlibs story.",
-    //     "Instructions: Input a number in the field below and press go to see if it's odd or even!",
-    //     "Instructions: First, select whether or not you would like to reverse a string of letters or numbers. Then input what you'd like to reverse.",
-    //     "Instructions: Search the through the Season 4 Codestack directory to find a student.",
-    //     "Instructions: Select a cuisine to receive a random restaurant and dish to try."
-    // ];
+    let instructionsArr = [
+        "Instructions: Write your name in the field below and press go to receive a greeting!",
+        "Instructions: Write two numbers in the boxes below then press go to get the sum.",
+        "Instructions: Fill in the input fields and press go to receive a wakeup message.",
+        "Instructions: Select two numbers to get two comparison statements.",
+        "Instructions: Fill in all 10 text boxes to create a Madlibs story.",
+        "Instructions: Input a number in the field below and press go to see if it's odd or even!",
+        "Instructions: First, select whether or not you would like to reverse a string of letters or numbers. Then input what you'd like to reverse.",
+        "Instructions: Search the through the Season 4 Codestack directory to find a student.",
+        "Instructions: Select a cuisine to receive a random restaurant and dish to try."
+    ];
 
 import {miniCh1, createInstructions} from "./miniCh1.js";
 import miniCh2 from "./minich2.js";
@@ -73,6 +73,7 @@ import miniCh9 from "./minich9.js";
 
 if(goBtn1 != null)
 {
+    createInstructions(instructionsArr[0]);
     goBtn1.addEventListener('click', function()
     {
         miniCh1(ch1TxtBox.value,output1);
@@ -81,6 +82,7 @@ if(goBtn1 != null)
 
 if(goBtn2 != null)
 {
+    createInstructions(instructionsArr[1]);
     goBtn2.addEventListener('click', function()
     {
         miniCh2(num1.value, num2.value, output2);
@@ -89,6 +91,7 @@ if(goBtn2 != null)
 
 if(goBtn3 != null)
 {
+    createInstructions(instructionsArr[2]);
     ampm3.addEventListener('input', function()
     {
         ampm = this.value;
@@ -102,6 +105,7 @@ if(goBtn3 != null)
 
 if(goBtn4 != null)
 {
+    createInstructions(instructionsArr[3]);
     goBtn4.addEventListener('click', function()
     {
         miniCh4(value1.value, value2.value, output4)
@@ -110,6 +114,7 @@ if(goBtn4 != null)
 
 if(goBtn5 != null)
 {
+    createInstructions(instructionsArr[4]);
     goBtn5.addEventListener('click', function()
     {
         miniCh5(allInputs.length, allInputs[0].value, allInputs[1].value, allInputs[2].value, allInputs[3].value, allInputs[4].value, allInputs[5].value, allInputs[6].value, allInputs[7].value, allInputs[8].value, allInputs[9].value, output5);
@@ -118,6 +123,7 @@ if(goBtn5 != null)
 
 if(goBtn6 != null)
 {
+    createInstructions(instructionsArr[5]);
     goBtn6.addEventListener('click', function()
     {
         miniCh6(num6.value, output6);
@@ -126,6 +132,7 @@ if(goBtn6 != null)
 
 if(goBtn7 != null)
 {
+    createInstructions(instructionsArr[6]);
     stringOrInt.addEventListener('input', function()
     {
         strOrInt = this.value;
@@ -136,10 +143,11 @@ if(goBtn7 != null)
         miniCh7(strOrInt, userInput7.value, output7)
     })
 }
-// createInstructions(instructionsArr[0]);
+
 
 if(goBtn8 != null)
 {
+    createInstructions(instructionsArr[7]);
     searchType.addEventListener('input', function()
     {
         selectedType = this.value;
@@ -162,6 +170,7 @@ if(goBtn8 != null)
 
 if(goBtn9 != null)
 {
+    createInstructions(instructionsArr[8]);
     cuisineOptions.addEventListener('input', function()
     {
         selectedCuisine = this.value;
