@@ -149,11 +149,13 @@
     <script>
         const swiper = new Swiper('.swiper', {
     // Optional parameters
-    loop: true,
+    // loop: true,
+    rewind: true,
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      type: 'fraction',
     },
   
     // Navigation arrows
@@ -164,6 +166,7 @@
   
   
   });
+  
     </script>
 
        <!-- Option 2: Separate Popper and Bootstrap JS -->

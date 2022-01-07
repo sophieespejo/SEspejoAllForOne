@@ -3,7 +3,7 @@ export function miniCh8Search(searchType, userInput8, allStudents)
     injectHere.innerHTML="";
     if (searchType == "hobbies")
     {
-        searchHobbies(userInput8.value);
+        searchHobbies(userInput8, allStudents);
     }
     else
     {
@@ -109,8 +109,7 @@ export function getAll(allStudents)
 
 export function fillSlidesWithData(allStudents, allSlides)
 {
-    for(let i=0; i< allStudents.length; i++)
-            {
+
                 for(let j = 0; j < allSlides.length; j++)
                 {
                     allSlides[j].children[0].children[0].textContent = allStudents[j].fName + " ";
@@ -119,10 +118,10 @@ export function fillSlidesWithData(allStudents, allSlides)
                     allSlides[j].children[2].children[0].textContent = allStudents[j].slackId;
                     allSlides[j].children[3].children[0].textContent = allStudents[j].hobbies;
                 }
-            }
+            
 }
 
-export function searchHobbies (hobbiesSearch)
+export function searchHobbies (hobbiesSearch, allStudents)
 {
     injectHere.innerHTML="";
     fetch("https://sespejodirectory.azurewebsites.net/directory/allstudents/hobbieslist/"+hobbiesSearch).then(
@@ -130,7 +129,7 @@ export function searchHobbies (hobbiesSearch)
     ).then(
         data => {
             allStudents = data;
-            console.log("allstudents.length is" + allStudents.length);
+            console.log(allStudents);
             makeSlide(allStudents);
         }
     )

@@ -19,11 +19,24 @@ body,html
     color: #F5F0ED;
 }
 
-/* .swiper
+a.mainLink:hover
 {
-    height: 100px;
-    width: 650px;
-} */
+    text-decoration: none;
+    color: #F5F0ED;
+}
+
+.swiper-wrapper{
+    padding-bottom: 30px;
+}
+
+.swiper-pagination-fraction{
+    bottom: -0px !important;
+}
+ /* .swiper
+{
+    height: 115px;
+    width: 600px;
+}  */
 .game-container,.game-containerIndex, .game-container8 {
     margin: auto;
     border: 1px solid black;
