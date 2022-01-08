@@ -49,15 +49,7 @@ let ch1TxtBox = document.getElementById('ch1TxtBox'),
     selectedCuisine,
     injectInstructionsHere = document.getElementById('injectInstructionsHere');
 
-// import miniCh1 from "./miniCh1.js";
-// import miniCh2 from "./minich2.js";
-// import miniCh3 from "./minich3.js";
-// import miniCh4 from "./minich4.js";
-// import { getMadlib, miniCh5 } from "./minich5.js";
-// import miniCh6 from "./miniCh6.js";
-// import miniCh7 from "./miniCh7.js";
 import { searchHobbies, fillSlidesWithData, getAll,makeSlide, getRandom, miniCh8Search } from "./minich8.js";
-// import miniCh9 from "./minich9.js";
 import GetInstructions from "./instructions.js";
 import fetchData from "./fetches.js";
 
@@ -86,7 +78,6 @@ if(goBtn2 != null)
         if((parseInt(num1.value)) && (parseInt(num2.value)))
         {
             let dataFromFetch = await fetchData(2, [num1.value, num2.value]);
-            // miniCh2(num1.value, num2.value, output2);
             output2.className = "fetchedStuff zoomer";
             output2.textContent = dataFromFetch;
         }
@@ -122,7 +113,6 @@ if(goBtn3 != null)
             output3.className = "errorMsg shake";
             output3.textContent = "Please fill in all fields with valid inputs.";
         }
-            // miniCh3(name3.value, hour3.value, min3.value, ampm, output3);
         })
 }
 
@@ -142,7 +132,6 @@ if(goBtn4 != null)
             output4.className = "errorMsg shake";
             output4.textContent = "Please select valid numbers.";
         }
-        // miniCh4(value1.value, value2.value, output4)
     })
 }
 
@@ -165,7 +154,6 @@ if(goBtn5 != null)
             }
         }
 
-        // miniCh5(allInputs.length, allInputs[0].value, allInputs[1].value, allInputs[2].value, allInputs[3].value, allInputs[4].value, allInputs[5].value, allInputs[6].value, allInputs[7].value, allInputs[8].value, allInputs[9].value, output5);
     })
 }
 
@@ -185,7 +173,6 @@ if(goBtn6 != null)
             output6.className = "errorMsg shake";
             output6.textContent = "Please select a valid number.";
         }
-        // miniCh6(num6.value, output6);
     })
 }
 
@@ -277,7 +264,6 @@ if(goBtn9 != null)
             output9.className = "fetchedStuff zoomer";
             output9.textContent = dataFromFetch;
         }
-        // miniCh9(selectedCuisine, output9);
     });
 }
 

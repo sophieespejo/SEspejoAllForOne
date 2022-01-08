@@ -110,14 +110,14 @@ export function getAll(allStudents)
 export function fillSlidesWithData(allStudents, allSlides)
 {
 
-                for(let j = 0; j < allSlides.length; j++)
-                {
-                    allSlides[j].children[0].children[0].textContent = allStudents[j].fName + " ";
-                    allSlides[j].children[0].children[1].textContent = allStudents[j].lName;
-                    allSlides[j].children[1].children[0].textContent = allStudents[j].email;
-                    allSlides[j].children[2].children[0].textContent = allStudents[j].slackId;
-                    allSlides[j].children[3].children[0].textContent = allStudents[j].hobbies;
-                }
+    for(let j = 0; j < allSlides.length; j++)
+    {
+        allSlides[j].children[0].children[0].textContent = allStudents[j].fName + " ";
+        allSlides[j].children[0].children[1].textContent = allStudents[j].lName;
+        allSlides[j].children[1].children[0].textContent = allStudents[j].email;
+        allSlides[j].children[2].children[0].textContent = allStudents[j].slackId;
+        allSlides[j].children[3].children[0].textContent = allStudents[j].hobbies;
+    }
             
 }
 
