@@ -25,6 +25,4 @@ export default function GetInstructions(challengeNumber){
         //append col to row
         mainRow.appendChild(mainCol);
         injectInstructionsHere.prepend(mainRow);
-        
-    // return instructionsArr[challengeNumber];
 }
