@@ -142,18 +142,18 @@ if(goBtn5 != null)
     {
         for(let i = 0; i< allInputs.length; i++)
         {
-            if(!allInputs[i] == "")
+            if(allInputs[i].value == "")
             {
+                output5.className = "errorMsg shake";
+                output5.textContent = "Please fill in all inputs";
+            }
+            else{
+
                 let dataFromFetch = await fetchData(5, [allInputs[0].value, allInputs[1].value, allInputs[2].value, allInputs[3].value, allInputs[4].value, allInputs[5].value, allInputs[6].value, allInputs[7].value, allInputs[8].value, allInputs[9].value]);
                 output5.className = "mlTxt zoomer";
                 output5.textContent = dataFromFetch;
             }
-            else{
-                output5.className = "errorMsg shake";
-                output5.textContent = "Please fill in all inputs";
-            }
         }
-
     })
 }
 
