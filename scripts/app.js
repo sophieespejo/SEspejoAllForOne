@@ -66,6 +66,7 @@ if(goBtn1 != null)
             output1.className = "fetchedStuff zoomer";
             output1.textContent = dataFromFetch;
             startConfetti();
+            setTimeout(stopConfetti, 3000);
           } else {
             output1.className = "errorMsg shake";
             output1.textContent = "Please write a valid name";
@@ -85,6 +86,7 @@ if(goBtn2 != null)
             output2.className = "fetchedStuff zoomer";
             output2.textContent = dataFromFetch;
             startConfetti();
+            setTimeout(stopConfetti, 3000);
         }
         else{
             output2.className = "errorMsg shake"
@@ -108,6 +110,7 @@ if(goBtn3 != null)
             let dataFromFetch = await fetchData(3, [name3.value, hour3.value, min3.value, ampm]);output3.className = "fetchedStuff zoomer";
             output3.textContent = dataFromFetch;
             startConfetti();
+            setTimeout(stopConfetti, 3000);
         
         }
         else if(ampm == "nothing")
@@ -133,7 +136,7 @@ if(goBtn4 != null)
             output4.className = "fetchedStuff zoomer";
             output4.textContent = dataFromFetch;
             startConfetti();
-            
+            setTimeout(stopConfetti, 3000);
         }
     else {
             output4.className = "errorMsg shake";
@@ -160,6 +163,7 @@ if(goBtn5 != null)
                 output5.className = "mlTxt zoomer";
                 output5.textContent = dataFromFetch;
                 startConfetti();
+                setTimeout(stopConfetti, 3000);
             }
         }
     })
@@ -176,7 +180,7 @@ if(goBtn6 != null)
             output6.className = "fetchedStuff zoomer";
             output6.textContent = dataFromFetch;
             startConfetti();
-            
+            setTimeout(stopConfetti, 3000);
         }
         else{
             output6.className = "errorMsg shake";
@@ -208,6 +212,7 @@ if(goBtn7 != null)
                 output7.className = "fetchedStuff zoomer";
                 output7.textContent = dataFromFetch;
                 startConfetti();
+                setTimeout(stopConfetti, 3000);
             }
         }
         else if(strOrInt == "int")
@@ -222,6 +227,7 @@ if(goBtn7 != null)
                 output7.className = "fetchedStuff zoomer";
                 output7.textContent = dataFromFetch;
                 startConfetti();
+                setTimeout(stopConfetti, 3000);
             }
         }
         else if(stringOrInteger == "nothing")
@@ -275,6 +281,7 @@ if(goBtn9 != null)
             output9.className = "fetchedStuff zoomer";
             output9.textContent = dataFromFetch;
             startConfetti();
+            setTimeout(stopConfetti, 3000);
         }
     });
 }
