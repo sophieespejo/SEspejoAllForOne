@@ -1,4 +1,6 @@
-// alert("hii")
+
+
+
 let ch1TxtBox = document.getElementById('ch1TxtBox'),
     goBtn1 = document.getElementById('goBtn1'),
     output1 = document.getElementById('output1'),
@@ -52,6 +54,7 @@ let ch1TxtBox = document.getElementById('ch1TxtBox'),
 import { searchHobbies, fillSlidesWithData, getAll,makeSlide, getRandom, miniCh8Search } from "./minich8.js";
 import GetInstructions from "./instructions.js";
 import fetchData from "./fetches.js";
+import { startConfetti, stopConfetti } from "./confetti.js";
 
 if(goBtn1 != null)
 {
@@ -62,6 +65,7 @@ if(goBtn1 != null)
             let dataFromFetch = await fetchData(1, [ch1TxtBox.value]);
             output1.className = "fetchedStuff zoomer";
             output1.textContent = dataFromFetch;
+            startConfetti();
           } else {
             output1.className = "errorMsg shake";
             output1.textContent = "Please write a valid name";
@@ -80,6 +84,7 @@ if(goBtn2 != null)
             let dataFromFetch = await fetchData(2, [num1.value, num2.value]);
             output2.className = "fetchedStuff zoomer";
             output2.textContent = dataFromFetch;
+            startConfetti();
         }
         else{
             output2.className = "errorMsg shake"
@@ -102,6 +107,7 @@ if(goBtn3 != null)
         {
             let dataFromFetch = await fetchData(3, [name3.value, hour3.value, min3.value, ampm]);output3.className = "fetchedStuff zoomer";
             output3.textContent = dataFromFetch;
+            startConfetti();
         
         }
         else if(ampm == "nothing")
@@ -126,6 +132,7 @@ if(goBtn4 != null)
             let dataFromFetch = await fetchData(4, [value1.value, value2.value]);
             output4.className = "fetchedStuff zoomer";
             output4.textContent = dataFromFetch;
+            startConfetti();
             
         }
     else {
@@ -152,6 +159,7 @@ if(goBtn5 != null)
                 let dataFromFetch = await fetchData(5, [allInputs[0].value, allInputs[1].value, allInputs[2].value, allInputs[3].value, allInputs[4].value, allInputs[5].value, allInputs[6].value, allInputs[7].value, allInputs[8].value, allInputs[9].value]);
                 output5.className = "mlTxt zoomer";
                 output5.textContent = dataFromFetch;
+                startConfetti();
             }
         }
     })
@@ -167,6 +175,7 @@ if(goBtn6 != null)
             let dataFromFetch = await fetchData(6, [num6.value]);
             output6.className = "fetchedStuff zoomer";
             output6.textContent = dataFromFetch;
+            startConfetti();
             
         }
         else{
@@ -198,6 +207,7 @@ if(goBtn7 != null)
                 let dataFromFetch = await fetchData(7, [strOrInt, userInput7.value]);
                 output7.className = "fetchedStuff zoomer";
                 output7.textContent = dataFromFetch;
+                startConfetti();
             }
         }
         else if(strOrInt == "int")
@@ -211,6 +221,7 @@ if(goBtn7 != null)
                 let dataFromFetch = await fetchData(7, [strOrInt, userInput7.value]);
                 output7.className = "fetchedStuff zoomer";
                 output7.textContent = dataFromFetch;
+                startConfetti();
             }
         }
         else if(stringOrInteger == "nothing")
@@ -263,6 +274,7 @@ if(goBtn9 != null)
             let dataFromFetch = await fetchData(9, [selectedCuisine]);
             output9.className = "fetchedStuff zoomer";
             output9.textContent = dataFromFetch;
+            startConfetti();
         }
     });
 }
